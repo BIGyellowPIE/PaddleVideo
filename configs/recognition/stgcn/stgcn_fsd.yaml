@@ -23,13 +23,13 @@ DATASET: #DATASET field
 PIPELINE: #PIPELINE field
   train: #Mandotary, indicate the pipeline to deal with the training data, associate to the 'paddlevideo/loader/pipelines/'
     sample:
-      name: 'SampleFrame'
+      name: 'AutoPadding'
       window_size: 350
     transform: #Mandotary, image transfrom operator
       - SkeletonNorm:
   test: #Mandatory, indicate the pipeline to deal with the validing data. associate to the 'paddlevideo/loader/pipelines/'
     sample:
-      name: 'SampleFrame'
+      name: 'AutoPadding'
       window_size: 350
     transform: #Mandotary, image transfrom operator
       - SkeletonNorm:
