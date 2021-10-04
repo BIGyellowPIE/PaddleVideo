@@ -4,7 +4,7 @@ MODEL: #MODEL field
     name: 'STGCN' #Mandatory, The name of backbone.
   head:
     name: 'STGCNHead' #Mandatory, indicate the type of head, associate to the 'paddlevideo/modeling/heads'
-    num_classes: 10 #Optional, the number of classes to be classified.
+    num_classes: 30 #Optional, the number of classes to be classified.
 
 DATASET: #DATASET field
   batch_size: 64 #Mandatory, bacth size
